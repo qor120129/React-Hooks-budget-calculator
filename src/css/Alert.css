@@ -1,0 +1,27 @@
+.alert {
+  position: absolute;
+  top: 1rem;
+  right: 50%;
+  padding: 0.75rem 1.25rem;
+  color: var(--white);
+  text-align: center;
+  width: 88%;
+  max-width: 960px;
+  border-radius:25px ;
+  -webkit-border-radius:25px ;
+  -moz-border-radius:25px ;
+  -ms-border-radius:25px ;
+  -o-border-radius:25px ;
+  transform: translateX(50%);
+  -webkit-transform: translateX(50%);
+  -moz-transform: translateX(50%);
+  -ms-transform: translateX(50%);
+  -o-transform: translateX(50%);
+}
+.alert-error{
+  background-color: var(--red);
+}
+.alert-success{
+  background-color: var(--second);
+
+}

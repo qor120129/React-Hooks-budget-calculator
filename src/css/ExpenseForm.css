@@ -1,0 +1,37 @@
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.form_center {
+  display: flex;
+  gap: 1rem;
+}
+
+.form_group{
+  flex: 1;
+}
+
+label{
+  display: block;
+  color: var(--second);
+  text-transform: capitalize;
+  font-weight: 600;
+  line-height: 2rem;
+}
+
+.form_control{
+  background: var(--white);
+  border: none;
+  border-bottom: 1px solid var(--second);
+  outline: none;
+  height: 3rem;
+  width: 100%;
+  font-size: 16px;
+  margin: 0 0 8px 0;
+  padding: 0;
+}
+.form_control::placeholder{
+  font-size: 14px;
+}
