@@ -13,8 +13,8 @@ const App = () => {
   const [alert, setAlert] = useState({ show: false })
   const [id, setId] = useState('')
   const [edit, setEdit] = useState(false)
-  
 
+  //리스트 삭제 버튼 클릭
   const clickDelete = (id, DeleteAmount) => {
     const newExpenseList = expenseList.filter((value) => value.id !== id
     )
@@ -24,11 +24,15 @@ const App = () => {
     showAlert({ type: 'error', text: '항목이 삭제되었습니다.' })
   }
 
+
+  //전체 리스트 삭제 버튼 클릭
   const clickDeleteAll = () => {
     setExpenseList([])
-    showAlert({ type: 'error', text: '항목이 삭제되었습니다.' })
+    showAlert({ type: 'error', text: '항목이 전체 삭제되었습니다.' })
   }
 
+
+  //input value값 변경
   const inputChange = (e) => {
     const { name, value, valueAsNumber } = e.target;
     if (name === 'charge') {
@@ -39,20 +43,21 @@ const App = () => {
     }
   }
 
+
+  //list 추가 버튼 클릭
   const clickAdd = (e) => {
     e.preventDefault()
 
-    
     if (amount && charge) {
-      if(edit) {
+      if (edit) {
         const newExpenseList = expenseList.map(item => {
-          return item.id === id ? {...item, amount, charge} : item
+          console.log('item', item)
+          return item.id === id ? { ...item, amount, charge } : item
         })
         setExpenseList(newExpenseList)
         setEdit(false)
-        
         showAlert({ type: 'success', text: '목록이 수정 되었습니다.' })
-      } else{
+      } else {
         const newExpense = { id: crypto.randomUUID(), charge, amount }
         const newExpenseList = [...expenseList, newExpense]
         const newTotal = newExpenseList.reduce((acc, curr) => {
@@ -70,6 +75,8 @@ const App = () => {
     }
   }
 
+
+  //Alert 띄우기
   const showAlert = ({ type, text }) => {
     setAlert({ show: true, type, text })
     setTimeout(() => {
@@ -77,9 +84,11 @@ const App = () => {
     }, 5000)
   }
 
+
+  //list 수정 버튼 클릭
   const itemEdit = (id) => {
     const expense = expenseList.find((item) => item.id === id)
-    const {amount, charge} = expense
+    const { amount, charge } = expense
     setId(id)
     setAmount(amount)
     setCharge(charge)
