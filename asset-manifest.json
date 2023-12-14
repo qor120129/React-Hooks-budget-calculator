@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/React-Hooks-budget-calculator/static/css/main.fe65ea32.css",
+    "main.js": "/React-Hooks-budget-calculator/static/js/main.c76a8cbf.js",
+    "static/js/787.7b6dea5d.chunk.js": "/React-Hooks-budget-calculator/static/js/787.7b6dea5d.chunk.js",
+    "index.html": "/React-Hooks-budget-calculator/index.html",
+    "main.fe65ea32.css.map": "/React-Hooks-budget-calculator/static/css/main.fe65ea32.css.map",
+    "main.c76a8cbf.js.map": "/React-Hooks-budget-calculator/static/js/main.c76a8cbf.js.map",
+    "787.7b6dea5d.chunk.js.map": "/React-Hooks-budget-calculator/static/js/787.7b6dea5d.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.fe65ea32.css",
+    "static/js/main.c76a8cbf.js"
+  ]
+}
