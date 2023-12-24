@@ -28,6 +28,7 @@ const App = () => {
   //전체 리스트 삭제 버튼 클릭
   const clickDeleteAll = () => {
     setExpenseList([])
+    setTotal(0)
     showAlert({ type: 'error', text: '항목이 전체 삭제되었습니다.' })
   }
 
