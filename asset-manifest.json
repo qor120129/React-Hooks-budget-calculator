@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/React-Hooks-budget-calculator/static/css/main.fe65ea32.css",
-    "main.js": "/React-Hooks-budget-calculator/static/js/main.056b5569.js",
+    "main.js": "/React-Hooks-budget-calculator/static/js/main.c62cd680.js",
     "static/js/787.7b6dea5d.chunk.js": "/React-Hooks-budget-calculator/static/js/787.7b6dea5d.chunk.js",
     "index.html": "/React-Hooks-budget-calculator/index.html",
     "main.fe65ea32.css.map": "/React-Hooks-budget-calculator/static/css/main.fe65ea32.css.map",
-    "main.056b5569.js.map": "/React-Hooks-budget-calculator/static/js/main.056b5569.js.map",
+    "main.c62cd680.js.map": "/React-Hooks-budget-calculator/static/js/main.c62cd680.js.map",
     "787.7b6dea5d.chunk.js.map": "/React-Hooks-budget-calculator/static/js/787.7b6dea5d.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.fe65ea32.css",
-    "static/js/main.056b5569.js"
+    "static/js/main.c62cd680.js"
   ]
 }
