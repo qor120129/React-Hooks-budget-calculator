@@ -52,10 +52,14 @@ const App = () => {
     if (amount && charge) {
       if (edit) {
         const newExpenseList = expenseList.map(item => {
-          console.log('item', item)
           return item.id === id ? { ...item, amount, charge } : item
         })
+        console.log('charge', newExpenseList)
         setExpenseList(newExpenseList)
+        const newTotal = newExpenseList.reduce((acc, curr) => {
+          return acc += curr.amount
+        }, 0)
+        setTotal(newTotal)
         setEdit(false)
         showAlert({ type: 'success', text: '목록이 수정 되었습니다.' })
       } else {
@@ -64,9 +68,9 @@ const App = () => {
         const newTotal = newExpenseList.reduce((acc, curr) => {
           return acc += curr.amount
         }, 0)
-        showAlert({ type: 'success', text: '목록이 추가 되었습니다.' })
         setTotal(newTotal)
-        console.log(total)
+        showAlert({ type: 'success', text: '목록이 추가 되었습니다.' })
+        console.log(newTotal)
         setExpenseList(newExpenseList)
       }
       setCharge('')
